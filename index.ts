@@ -26,7 +26,7 @@ class Gcp {
     } catch (error) {
       console.log(error.response);
       console.log(error.response.data);
-      throw error;
+      return error;
     }
 
   }
@@ -38,7 +38,7 @@ class Gcp {
       return resp;
     } catch (error) {
       console.log(error.response.data);
-      throw error;
+      return error;
     }
 
   }
