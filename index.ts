@@ -21,12 +21,12 @@ class Gcp {
         id:projectId,
         locationId:'us-central'
       }});
-      console.log(resp);
+      console.log(resp.data);
       return resp;
     } catch (error) {
       console.log(error.response);
       console.log(error.response.data);
-      return error;
+      throw error;
     }
 
   }
@@ -38,7 +38,7 @@ class Gcp {
       return resp;
     } catch (error) {
       console.log(error.response.data);
-      return error;
+      throw error;
     }
 
   }
