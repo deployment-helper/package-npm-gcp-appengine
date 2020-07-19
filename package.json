@@ -1,0 +1,29 @@
+{  
+  "name": "@myjunior/hello-world",
+  "version": "v0.3.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc",
+    "clean":"",
+    "push": "npm run build && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myjunior/package-npm-gcp-appengine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myjunior/package-npm-gcp-appengine/issues"
+  },
+  "homepage": "https://github.com/myjunior/package-npm-gcp-appengine#readme",
+  "engines": {"node": "12.x" },
+  "dependencies": {
+    "googleapis": "^55.0.0",
+    "typescript": "^3.9.7"
+  }
+}
